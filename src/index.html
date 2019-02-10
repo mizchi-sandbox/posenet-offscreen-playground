@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>{app_name}</title>
+    <title>Offscreen Posenet Playground</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
@@ -10,7 +10,10 @@
   </head>
 
   <body>
-    <div class="root"></div>
-    <script src="./main.tsx"></script>
+    <div id='main'>
+      <video autoplay="true" id="video" style="transform: scaleX(-1);display: none;"></video>
+      <canvas id="output" />
+    </div>
+    <script src="./main/main.tsx"></script>
   </body>
 </html>
